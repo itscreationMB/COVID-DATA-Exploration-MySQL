@@ -12,7 +12,7 @@ FROM covid_vaccinations.coviddeaths
 ORDER BY 1,2;
 
 -- Look at Total Cases vs Total Deaths 
--- Shows likelihood of dying if you contract Covid in your country 
+-- Shows likelihood of dying if you contact Covid in your country 
 
 SELECT location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 AS DeathPercentage 
 FROM covid_vaccinations.coviddeaths
